@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<robot name="converted">
+    <!--LINKS-->
+    <link name="base_link" />
+    <link name="link_Hips">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightUpLeg">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.21" />
+            <geometry>
+                <box size="0.02 0.02 0.42" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightLeg">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.2" />
+            <geometry>
+                <box size="0.02 0.02 0.4" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightFoot">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0.0978897124528885 0" />
+            <geometry>
+                <box size="0.04 0.16677506566047667 0.02" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftUpLeg">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.21" />
+            <geometry>
+                <box size="0.02 0.02 0.42" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftLeg">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.2" />
+            <geometry>
+                <box size="0.02 0.02 0.4" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftFoot">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0.0978897124528885 0" />
+            <geometry>
+                <box size="0.04 0.16677506566047667 0.02" />
+            </geometry>
+            <material name="mat_col_(0.12156862745098039, 0.47058823529411764, 0.7058823529411765)">
+                <color rgba="0.12 0.47 0.71 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine1">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.05" />
+            <geometry>
+                <box size="0.02 0.02 0.10" />
+            </geometry>
+            <material name="mat_col_(0.12156862745098039, 0.47058823529411764, 0.7058823529411765)">
+                <color rgba="0.12 0.47 0.71 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine2">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.07" />
+            <geometry>
+                <box size="0.02 0.02 0.14" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Neck">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Neck1">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Head">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.09" />
+            <geometry>
+                <box size="0.10 0.10 0.18" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightShoulder">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0.075 0  0" />
+            <geometry>
+                <box size="0.15 0.02 0.02" />
+            </geometry>
+            <material name="mat_col_(0.6980392156862745, 0.8745098039215686, 0.5411764705882353)">
+                <color rgba="0.70 0.87 0.54 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightArm">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.13" />
+            <geometry>
+                <box size="0.02 0.02 0.26" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightForeArm">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.12" />
+            <geometry>
+                <box size="0.02 0.02 0.24" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHand">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.017634012177586554" />
+            <geometry>
+                <box size="0.02 0.02 0.030043131858110427" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftShoulder">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="-0.075 0 0" />
+            <geometry>
+                <box size="0.15 0.02 0.02" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftArm">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.13" />
+            <geometry>
+                <box size="0.02 0.02 0.26" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftForeArm">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.12" />
+            <geometry>
+                <box size="0.02 0.02 0.24" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHand">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.017634012177586554" />
+            <geometry>
+                <box size="0.02 0.02 0.030043131858110427" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <!--JOINTS-->
+    <joint name="joint_Hips" type="spherical">
+        <parent link="base_link" />
+        <child link="link_Hips" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 0.971200" />
+    </joint>
+    <joint name="joint_RightUpLeg" type="spherical">
+        <parent link="link_Hips" />
+        <child link="link_RightUpLeg" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="0.110000 0.0 0.0" />
+    </joint>
+    <joint name="joint_RightLeg" type="spherical">
+        <parent link="link_RightUpLeg" />
+        <child link="link_RightLeg" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.450620" />
+    </joint>
+    <joint name="joint_RightFoot" type="spherical">
+        <parent link="link_RightLeg" />
+        <child link="link_RightFoot" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.420580" />
+    </joint>
+    <joint name="joint_LeftUpLeg" type="spherical">
+        <parent link="link_Hips" />
+        <child link="link_LeftUpLeg" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="-0.110000 0.0 0.0" />
+    </joint>
+    <joint name="joint_LeftLeg" type="spherical">
+        <parent link="link_LeftUpLeg" />
+        <child link="link_LeftLeg" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.450620" />
+    </joint>
+    <joint name="joint_LeftFoot" type="spherical">
+        <parent link="link_LeftLeg" />
+        <child link="link_LeftFoot" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.420580" />
+    </joint>
+    <joint name="joint_Spine" type="spherical">
+        <parent link="link_Hips" />
+        <child link="link_Spine" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.08" />
+    </joint>
+    <joint name="joint_Spine1" type="spherical">
+        <parent link="link_Spine" />
+        <child link="link_Spine1" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.08" />
+    </joint>
+    <joint name="joint_Spine2" type="spherical">
+        <parent link="link_Spine1" />
+        <child link="link_Spine2" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.127600" />
+    </joint>
+    <joint name="joint_Neck" type="spherical">
+        <parent link="link_Spine2" />
+        <child link="link_Neck" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.191400" />
+    </joint>
+    <joint name="joint_Neck1" type="spherical">
+        <parent link="link_Neck" />
+        <child link="link_Neck1" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.042500" />
+    </joint>
+    <joint name="joint_Head" type="spherical">
+        <parent link="link_Neck1" />
+        <child link="link_Head" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.042500" />
+    </joint>
+    <joint name="joint_RightShoulder" type="spherical">
+        <parent link="link_Spine2" />
+        <child link="link_RightShoulder" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="0.029000 0.0 0.133400" />
+    </joint>
+    <joint name="joint_RightArm" type="spherical">
+        <parent link="link_RightShoulder" />
+        <child link="link_RightArm" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.161000 0.0 0.0" />
+    </joint>
+    <joint name="joint_RightForeArm" type="spherical">
+        <parent link="link_RightArm" />
+        <child link="link_RightForeArm" />
+        <axis xyz="1 1 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.280000" />
+    </joint>
+    <joint name="joint_RightHand" type="spherical">
+        <parent link="link_RightForeArm" />
+        <child link="link_RightHand" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.260000" />
+    </joint>
+    <joint name="joint_LeftShoulder" type="spherical">
+        <parent link="link_Spine2" />
+        <child link="link_LeftShoulder" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="-0.029000 0.0 0.133400" />
+    </joint>
+    <joint name="joint_LeftArm" type="spherical">
+        <parent link="link_LeftShoulder" />
+        <child link="link_LeftArm" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="-0.161000 0.0 0.0" />
+    </joint>
+    <joint name="joint_LeftForeArm" type="spherical">
+        <parent link="link_LeftArm" />
+        <child link="link_LeftForeArm" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.280000" />
+    </joint>
+    <joint name="joint_LeftHand" type="spherical">
+        <parent link="link_LeftForeArm" />
+        <child link="link_LeftHand" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.260000" />
+    </joint>
+</robot>

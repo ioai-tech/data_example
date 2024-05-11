@@ -5,7 +5,7 @@
 Download sample data from [here](https://drive.google.com/drive/folders/1xQjkYJfL77e9iPhirie8gfJFGo7pjtbT?usp=sharing)
 
 `*-full.tar.gz` contains full data.
-`*-no-depth.tar.gz` contains the data for the no-depth version of the dataset, which take up less storage.
+`*-no-depth.tar.gz` contains the data for the no-depth version of the dataset, including low-resolution RGB images, which occupy less storage space.
 
 Extract data:
 
