@@ -55,3 +55,10 @@ If you want to visualize the mocap data,
    ```
 
 ## Output
+
+
+## Copyright Notice
+
+All software is licensed under the MIT License.
+
+All other materials are offered under a CC BY-NC-SA 4.0 license. You are free to use, copy, and redistribute the material for non-commercial purposes provided you give appropriate credit, provide a link to the license, and indicate if changes were made. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original. You may not use the material for commercial purposes.
