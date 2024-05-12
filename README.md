@@ -4,13 +4,13 @@
 
 Download sample data from [here](https://drive.google.com/drive/folders/1xQjkYJfL77e9iPhirie8gfJFGo7pjtbT?usp=sharing)
 
-`*-full.tar.gz` contains full data.
-`*-no-depth.tar.gz` contains the data for the no-depth version of the dataset, including low-resolution RGB images, which occupy less storage space.
+`*_full.tar` contains full data.
+`*_no_depth_low_res.tar` contains the data for the no-depth version of the dataset, including low-resolution RGB images, which occupy less storage space.
 
 Extract data:
 
 ```
-tar -xvf DATA_NAME.tar.gz
+tar -xvf DATA_NAME.tar
 ```
 
 If you want **more data with more detailed annotations**, please fill the form [here](https://forms.gle/fDdyipTKDZaL34zC6) to join the waiting list.
@@ -31,7 +31,7 @@ If you want **more data with more detailed annotations**, please fill the form [
 ## Install packages
 
 ```bash
-sudo apt-get install python3-pip
+sudo apt install python3-pip
 pip3 install opencv-python
 ```
 
