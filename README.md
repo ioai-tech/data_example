@@ -1,5 +1,7 @@
 # IO-DATA Example
 
+This repo is an example of how to visualize the dataset.
+
 ## Access data
 
 Download sample data from [here](https://drive.google.com/drive/folders/1xQjkYJfL77e9iPhirie8gfJFGo7pjtbT?usp=sharing)
@@ -13,7 +15,7 @@ Extract data:
 tar -xvf DATA_NAME.tar
 ```
 
-If you want **more data with more detailed annotations**, please fill the form [here](https://forms.gle/fDdyipTKDZaL34zC6) to join the waiting list.
+If you want **more data with more detailed annotations** OR **better softwares**, please fill the form [here](https://forms.gle/fDdyipTKDZaL34zC6) to join the waiting list. Alternatively, you can also contact us via [io@io-ai.tech](mailto:io@io-ai.tech).
 
 ![waiting_list](asserts/waiting_list_form.png)
 
@@ -57,6 +59,7 @@ If you want to visualize the mocap data,
 ## Output
 
 ![output](asserts/output.png)
+
 
 ## Copyright Notice
 
