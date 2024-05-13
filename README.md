@@ -15,7 +15,7 @@ tar -xvf DATA_NAME.tar
 
 If you want **more data with more detailed annotations**, please fill the form [here](https://forms.gle/fDdyipTKDZaL34zC6) to join the waiting list.
 
-![image](asserts/waiting_list_form.png)
+![waiting_list](asserts/waiting_list_form.png)
 
 ## Environment
 
@@ -56,6 +56,7 @@ If you want to visualize the mocap data,
 
 ## Output
 
+![output](asserts/output.png)
 
 ## Copyright Notice
 
