@@ -1,0 +1,2343 @@
+<?xml version="1.0"?>
+<robot name="converted">
+    <!--LINKS-->
+    <link name="base_link" />
+    <link name="link_Hips_R" />
+    <link name="link_Hips_P" />
+    <link name="link_Hips_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightUpLeg_R" />
+    <link name="link_RightUpLeg_P" />
+    <link name="link_RightUpLeg_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.21" />
+            <geometry>
+                <box size="0.02 0.02 0.42" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightLeg_R" />
+    <link name="link_RightLeg_P" />
+    <link name="link_RightLeg_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.2" />
+            <geometry>
+                <box size="0.02 0.02 0.4" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightFoot_R" />
+    <link name="link_RightFoot_P" />
+    <link name="link_RightFoot_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0.0978897124528885 0" />
+            <geometry>
+                <box size="0.04 0.16677506566047667 0.02" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftUpLeg_R" />
+    <link name="link_LeftUpLeg_P" />
+    <link name="link_LeftUpLeg_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.21" />
+            <geometry>
+                <box size="0.02 0.02 0.42" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftLeg_R" />
+    <link name="link_LeftLeg_P" />
+    <link name="link_LeftLeg_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.2" />
+            <geometry>
+                <box size="0.02 0.02 0.4" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftFoot_R" />
+    <link name="link_LeftFoot_P" />
+    <link name="link_LeftFoot_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0.0978897124528885 0" />
+            <geometry>
+                <box size="0.04 0.16677506566047667 0.02" />
+            </geometry>
+            <material name="mat_col_(0.12156862745098039, 0.47058823529411764, 0.7058823529411765)">
+                <color rgba="0.12 0.47 0.71 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine_R" />
+    <link name="link_Spine_P" />
+    <link name="link_Spine_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine1_R" />
+    <link name="link_Spine1_P" />
+    <link name="link_Spine1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.05" />
+            <geometry>
+                <box size="0.02 0.02 0.10" />
+            </geometry>
+            <material name="mat_col_(0.12156862745098039, 0.47058823529411764, 0.7058823529411765)">
+                <color rgba="0.12 0.47 0.71 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Spine2_R" />
+    <link name="link_Spine2_P" />
+    <link name="link_Spine2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.07" />
+            <geometry>
+                <box size="0.02 0.02 0.14" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Neck_R" />
+    <link name="link_Neck_P" />
+    <link name="link_Neck_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Neck1_R" />
+    <link name="link_Neck1_P" />
+    <link name="link_Neck1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.02" />
+            <geometry>
+                <box size="0.02 0.02 0.04" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_Head_R" />
+    <link name="link_Head_P" />
+    <link name="link_Head_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.09" />
+            <geometry>
+                <box size="0.10 0.10 0.18" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightShoulder_R" />
+    <link name="link_RightShoulder_P" />
+    <link name="link_RightShoulder_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0.075 0  0" />
+            <geometry>
+                <box size="0.15 0.02 0.02" />
+            </geometry>
+            <material name="mat_col_(0.6980392156862745, 0.8745098039215686, 0.5411764705882353)">
+                <color rgba="0.70 0.87 0.54 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightArm_R" />
+    <link name="link_RightArm_P" />
+    <link name="link_RightArm_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.13" />
+            <geometry>
+                <box size="0.02 0.02 0.26" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightForeArm_R" />
+    <link name="link_RightForeArm_P" />
+    <link name="link_RightForeArm_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.12" />
+            <geometry>
+                <box size="0.02 0.02 0.24" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHand_R" />
+    <link name="link_RightHand_P" />
+    <link name="link_RightHand_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.017634012177586554" />
+            <geometry>
+                <box size="0.02 0.02 0.030043131858110427" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandThumb1_R" />
+    <link name="link_RightHandThumb1_P" />
+    <link name="link_RightHandThumb1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.02090881034731865" />
+            <geometry>
+                <box size="0.01 0.01 0.035622417628765106" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandThumb2_R" />
+    <link name="link_RightHandThumb2_P" />
+    <link name="link_RightHandThumb2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.014525998458266258" />
+            <geometry>
+                <box size="0.01 0.01 0.024747997373342514" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandThumb3_R" />
+    <link name="link_RightHandThumb3_P" />
+    <link name="link_RightHandThumb3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.013699802979826927" />
+            <geometry>
+                <box size="0.01 0.01 0.023340405076742173" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightInHandIndex_R" />
+    <link name="link_RightInHandIndex_P" />
+    <link name="link_RightInHandIndex_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.030162290632724763" />
+            <geometry>
+                <box size="0.01 0.01 0.051387606263160704" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandIndex1_R" />
+    <link name="link_RightHandIndex1_P" />
+    <link name="link_RightHandIndex1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.020552407130599023" />
+            <geometry>
+                <box size="0.01 0.01 0.03501521214842796" />
+            </geometry>
+            <material name="mat_col_(0.41568627450980394, 0.23921568627450981, 0.6039215686274509)">
+                <color rgba="0.42 0.24 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandIndex2_R" />
+    <link name="link_RightHandIndex2_P" />
+    <link name="link_RightHandIndex2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.011653190664947032" />
+            <geometry>
+                <box size="0.01 0.01 0.019853584095835687" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandIndex3_R" />
+    <link name="link_RightHandIndex3_P" />
+    <link name="link_RightHandIndex3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.010249215178191662" />
+            <geometry>
+                <box size="0.01 0.01 0.01746162585914135" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightInHandMiddle_R" />
+    <link name="link_RightInHandMiddle_P" />
+    <link name="link_RightInHandMiddle_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.02943922273814678" />
+            <geometry>
+                <box size="0.01 0.01 0.050155712813138964" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandMiddle1_R" />
+    <link name="link_RightHandMiddle1_P" />
+    <link name="link_RightHandMiddle1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.022426203042268753" />
+            <geometry>
+                <box size="0.01 0.01 0.03820760518312454" />
+            </geometry>
+            <material name="mat_col_(0.8901960784313725, 0.10196078431372549, 0.10980392156862745)">
+                <color rgba="0.89 0.10 0.11 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandMiddle2_R" />
+    <link name="link_RightHandMiddle2_P" />
+    <link name="link_RightHandMiddle2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.014056202173233032" />
+            <geometry>
+                <box size="0.01 0.01 0.023947603702545166" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandMiddle3_R" />
+    <link name="link_RightHandMiddle3_P" />
+    <link name="link_RightHandMiddle3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.011210399866104125" />
+            <geometry>
+                <box size="0.01 0.01 0.019099199771881105" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightInHandRing_R" />
+    <link name="link_RightInHandRing_P" />
+    <link name="link_RightInHandRing_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.026454875618219374" />
+            <geometry>
+                <box size="0.01 0.01 0.04507126957178116" />
+            </geometry>
+            <material name="mat_col_(0.9921568627450981, 0.7490196078431373, 0.43529411764705883)">
+                <color rgba="0.99 0.75 0.44 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandRing1_R" />
+    <link name="link_RightHandRing1_P" />
+    <link name="link_RightHandRing1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.019542589634656906" />
+            <geometry>
+                <box size="0.01 0.01 0.03329478234052658" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandRing2_R" />
+    <link name="link_RightHandRing2_P" />
+    <link name="link_RightHandRing2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.01355940341949463" />
+            <geometry>
+                <box size="0.01 0.01 0.023101205825805663" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandRing3_R" />
+    <link name="link_RightHandRing3_P" />
+    <link name="link_RightHandRing3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.010540791749954224" />
+            <geometry>
+                <box size="0.01 0.01 0.017958385944366453" />
+            </geometry>
+            <material name="mat_col_(0.8901960784313725, 0.10196078431372549, 0.10980392156862745)">
+                <color rgba="0.89 0.10 0.11 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightInHandPinky_R" />
+    <link name="link_RightInHandPinky_P" />
+    <link name="link_RightInHandPinky_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.024314074516296386" />
+            <geometry>
+                <box size="0.01 0.01 0.041423978805541994" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandPinky1_R" />
+    <link name="link_RightHandPinky1_P" />
+    <link name="link_RightHandPinky1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.015649211034178732" />
+            <geometry>
+                <box size="0.01 0.01 0.026661618798971175" />
+            </geometry>
+            <material name="mat_col_(0.6980392156862745, 0.8745098039215686, 0.5411764705882353)">
+                <color rgba="0.70 0.87 0.54 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandPinky2_R" />
+    <link name="link_RightHandPinky2_P" />
+    <link name="link_RightHandPinky2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.009887406639754771" />
+            <geometry>
+                <box size="0.01 0.01 0.0168452113121748" />
+            </geometry>
+            <material name="mat_col_(1.0, 0.4980392156862745, 0.0)">
+                <color rgba="1.00 0.50 0.00 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_RightHandPinky3_R" />
+    <link name="link_RightHandPinky3_P" />
+    <link name="link_RightHandPinky3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.009342006258666515" />
+            <geometry>
+                <box size="0.01 0.01 0.015916010662913323" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftShoulder_R" />
+    <link name="link_LeftShoulder_P" />
+    <link name="link_LeftShoulder_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="-0.075 0 0" />
+            <geometry>
+                <box size="0.15 0.02 0.02" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftArm_R" />
+    <link name="link_LeftArm_P" />
+    <link name="link_LeftArm_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.13" />
+            <geometry>
+                <box size="0.02 0.02 0.26" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftForeArm_R" />
+    <link name="link_LeftForeArm_P" />
+    <link name="link_LeftForeArm_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.12" />
+            <geometry>
+                <box size="0.02 0.02 0.24" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHand_R" />
+    <link name="link_LeftHand_P" />
+    <link name="link_LeftHand_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.017634012177586554" />
+            <geometry>
+                <box size="0.02 0.02 0.030043131858110427" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandThumb1_R" />
+    <link name="link_LeftHandThumb1_P" />
+    <link name="link_LeftHandThumb1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.02090881034731865" />
+            <geometry>
+                <box size="0.01 0.01 0.035622417628765106" />
+            </geometry>
+            <material name="mat_col_(0.792156862745098, 0.6980392156862745, 0.8392156862745098)">
+                <color rgba="0.79 0.70 0.84 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandThumb2_R" />
+    <link name="link_LeftHandThumb2_P" />
+    <link name="link_LeftHandThumb2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.014525998458266258" />
+            <geometry>
+                <box size="0.01 0.01 0.024747997373342514" />
+            </geometry>
+            <material name="mat_col_(0.41568627450980394, 0.23921568627450981, 0.6039215686274509)">
+                <color rgba="0.42 0.24 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandThumb3_R" />
+    <link name="link_LeftHandThumb3_P" />
+    <link name="link_LeftHandThumb3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.013699802979826927" />
+            <geometry>
+                <box size="0.01 0.01 0.023340405076742173" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftInHandIndex_R" />
+    <link name="link_LeftInHandIndex_P" />
+    <link name="link_LeftInHandIndex_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.030162290632724763" />
+            <geometry>
+                <box size="0.01 0.01 0.051387606263160704" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandIndex1_R" />
+    <link name="link_LeftHandIndex1_P" />
+    <link name="link_LeftHandIndex1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.020552407130599023" />
+            <geometry>
+                <box size="0.01 0.01 0.03501521214842796" />
+            </geometry>
+            <material name="mat_col_(1.0, 0.4980392156862745, 0.0)">
+                <color rgba="1.00 0.50 0.00 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandIndex2_R" />
+    <link name="link_LeftHandIndex2_P" />
+    <link name="link_LeftHandIndex2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.011653190664947032" />
+            <geometry>
+                <box size="0.01 0.01 0.019853584095835687" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandIndex3_R" />
+    <link name="link_LeftHandIndex3_P" />
+    <link name="link_LeftHandIndex3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.010249215178191662" />
+            <geometry>
+                <box size="0.01 0.01 0.01746162585914135" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftInHandMiddle_R" />
+    <link name="link_LeftInHandMiddle_P" />
+    <link name="link_LeftInHandMiddle_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.02943922273814678" />
+            <geometry>
+                <box size="0.01 0.01 0.050155712813138964" />
+            </geometry>
+            <material name="mat_col_(0.6980392156862745, 0.8745098039215686, 0.5411764705882353)">
+                <color rgba="0.70 0.87 0.54 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandMiddle1_R" />
+    <link name="link_LeftHandMiddle1_P" />
+    <link name="link_LeftHandMiddle1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.022426203042268753" />
+            <geometry>
+                <box size="0.01 0.01 0.03820760518312454" />
+            </geometry>
+            <material name="mat_col_(0.6941176470588235, 0.34901960784313724, 0.1568627450980392)">
+                <color rgba="0.69 0.35 0.16 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandMiddle2_R" />
+    <link name="link_LeftHandMiddle2_P" />
+    <link name="link_LeftHandMiddle2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.014056202173233032" />
+            <geometry>
+                <box size="0.01 0.01 0.023947603702545166" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandMiddle3_R" />
+    <link name="link_LeftHandMiddle3_P" />
+    <link name="link_LeftHandMiddle3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.011210399866104125" />
+            <geometry>
+                <box size="0.01 0.01 0.019099199771881105" />
+            </geometry>
+            <material name="mat_col_(0.6509803921568628, 0.807843137254902, 0.8901960784313725)">
+                <color rgba="0.65 0.81 0.89 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftInHandRing_R" />
+    <link name="link_LeftInHandRing_P" />
+    <link name="link_LeftInHandRing_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.026454875618219374" />
+            <geometry>
+                <box size="0.01 0.01 0.04507126957178116" />
+            </geometry>
+            <material name="mat_col_(1.0, 1.0, 0.6)">
+                <color rgba="1.00 1.00 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandRing1_R" />
+    <link name="link_LeftHandRing1_P" />
+    <link name="link_LeftHandRing1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.019542589634656906" />
+            <geometry>
+                <box size="0.01 0.01 0.03329478234052658" />
+            </geometry>
+            <material name="mat_col_(0.8901960784313725, 0.10196078431372549, 0.10980392156862745)">
+                <color rgba="0.89 0.10 0.11 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandRing2_R" />
+    <link name="link_LeftHandRing2_P" />
+    <link name="link_LeftHandRing2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.01355940341949463" />
+            <geometry>
+                <box size="0.01 0.01 0.023101205825805663" />
+            </geometry>
+            <material name="mat_col_(0.2, 0.6274509803921569, 0.17254901960784313)">
+                <color rgba="0.20 0.63 0.17 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandRing3_R" />
+    <link name="link_LeftHandRing3_P" />
+    <link name="link_LeftHandRing3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.010540791749954224" />
+            <geometry>
+                <box size="0.01 0.01 0.017958385944366453" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftInHandPinky_R" />
+    <link name="link_LeftInHandPinky_P" />
+    <link name="link_LeftInHandPinky_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.024314074516296386" />
+            <geometry>
+                <box size="0.01 0.01 0.041423978805541994" />
+            </geometry>
+            <material name="mat_col_(0.12156862745098039, 0.47058823529411764, 0.7058823529411765)">
+                <color rgba="0.12 0.47 0.71 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandPinky1_R" />
+    <link name="link_LeftHandPinky1_P" />
+    <link name="link_LeftHandPinky1_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.015649211034178732" />
+            <geometry>
+                <box size="0.01 0.01 0.026661618798971175" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandPinky2_R" />
+    <link name="link_LeftHandPinky2_P" />
+    <link name="link_LeftHandPinky2_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.009887406639754771" />
+            <geometry>
+                <box size="0.01 0.01 0.0168452113121748" />
+            </geometry>
+            <material name="mat_col_(0.984313725490196, 0.6039215686274509, 0.6)">
+                <color rgba="0.98 0.60 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="link_LeftHandPinky3_R" />
+    <link name="link_LeftHandPinky3_P" />
+    <link name="link_LeftHandPinky3_Y">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.009342006258666515" />
+            <geometry>
+                <box size="0.01 0.01 0.015916010662913323" />
+            </geometry>
+            <material name="mat_col_(0.41568627450980394, 0.23921568627450981, 0.6039215686274509)">
+                <color rgba="0.42 0.24 0.60 1.0" />
+            </material>
+        </visual>
+    </link>
+    <link name="camera_color_optical_frame">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+    </link>
+    <link name="link_LeftMarker">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+    </link>
+    <link name="link_RightMarker">
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        <mass value="5.000000" />
+    </link>
+    <!--JOINTS-->
+    <joint name="joint_Head_Camera" type="revolute">
+        <parent link="link_Head_Y" />
+        <child link="camera_color_optical_frame" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin rpy="-2.16435517 -0.04424284  0.04033432" xyz="-0.0111583 0.13054877 0.23441126" />
+    </joint>
+    <joint name="joint_RightMarker" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightMarker" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin rpy="0 1.57079633 0 " xyz="0 0 -0.05" />
+    </joint>
+    <joint name="joint_LeftMarker" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftMarker" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin rpy="3.141592653589793 1.57079633  0" xyz="0 0 -0.05" />
+    </joint>
+    <joint name="joint_Hips_R" type="revolute">
+        <parent link="base_link" />
+        <child link="link_Hips_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 0.971200" />
+    </joint>
+    <joint name="joint_Hips_P" type="revolute">
+        <parent link="link_Hips_R" />
+        <child link="link_Hips_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Hips_Y" type="revolute">
+        <parent link="link_Hips_P" />
+        <child link="link_Hips_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.141592653589793" upper="3.141592653589793"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightUpLeg_R" type="revolute">
+        <parent link="link_Hips_Y" />
+        <child link="link_RightUpLeg_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="0.110000 0.0 0.0" />
+    </joint>
+    <joint name="joint_RightUpLeg_P" type="revolute">
+        <parent link="link_RightUpLeg_R" />
+        <child link="link_RightUpLeg_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightUpLeg_Y" type="revolute">
+        <parent link="link_RightUpLeg_P" />
+        <child link="link_RightUpLeg_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightLeg_R" type="revolute">
+        <parent link="link_RightUpLeg_Y" />
+        <child link="link_RightLeg_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.450620" />
+    </joint>
+    <joint name="joint_RightLeg_P" type="revolute">
+        <parent link="link_RightLeg_R" />
+        <child link="link_RightLeg_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightLeg_Y" type="revolute">
+        <parent link="link_RightLeg_P" />
+        <child link="link_RightLeg_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightFoot_R" type="revolute">
+        <parent link="link_RightLeg_Y" />
+        <child link="link_RightFoot_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.420580" />
+    </joint>
+    <joint name="joint_RightFoot_P" type="revolute">
+        <parent link="link_RightFoot_R" />
+        <child link="link_RightFoot_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightFoot_Y" type="revolute">
+        <parent link="link_RightFoot_P" />
+        <child link="link_RightFoot_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftUpLeg_R" type="revolute">
+        <parent link="link_Hips_Y" />
+        <child link="link_LeftUpLeg_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="-0.110000 0.0 0.0" />
+    </joint>
+    <joint name="joint_LeftUpLeg_P" type="revolute">
+        <parent link="link_LeftUpLeg_R" />
+        <child link="link_LeftUpLeg_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftUpLeg_Y" type="revolute">
+        <parent link="link_LeftUpLeg_P" />
+        <child link="link_LeftUpLeg_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftLeg_R" type="revolute">
+        <parent link="link_LeftUpLeg_Y" />
+        <child link="link_LeftLeg_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.450620" />
+    </joint>
+    <joint name="joint_LeftLeg_P" type="revolute">
+        <parent link="link_LeftLeg_R" />
+        <child link="link_LeftLeg_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftLeg_Y" type="revolute">
+        <parent link="link_LeftLeg_P" />
+        <child link="link_LeftLeg_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftFoot_R" type="revolute">
+        <parent link="link_LeftLeg_Y" />
+        <child link="link_LeftFoot_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.420580" />
+    </joint>
+    <joint name="joint_LeftFoot_P" type="revolute">
+        <parent link="link_LeftFoot_R" />
+        <child link="link_LeftFoot_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftFoot_Y" type="revolute">
+        <parent link="link_LeftFoot_P" />
+        <child link="link_LeftFoot_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine_R" type="revolute">
+        <parent link="link_Hips_Y" />
+        <child link="link_Spine_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.08" />
+    </joint>
+    <joint name="joint_Spine_P" type="revolute">
+        <parent link="link_Spine_R" />
+        <child link="link_Spine_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine_Y" type="revolute">
+        <parent link="link_Spine_P" />
+        <child link="link_Spine_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine1_R" type="revolute">
+        <parent link="link_Spine_Y" />
+        <child link="link_Spine1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.08" />
+    </joint>
+    <joint name="joint_Spine1_P" type="revolute">
+        <parent link="link_Spine1_R" />
+        <child link="link_Spine1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine1_Y" type="revolute">
+        <parent link="link_Spine1_P" />
+        <child link="link_Spine1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine2_R" type="revolute">
+        <parent link="link_Spine1_Y" />
+        <child link="link_Spine2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.127600" />
+    </joint>
+    <joint name="joint_Spine2_P" type="revolute">
+        <parent link="link_Spine2_R" />
+        <child link="link_Spine2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Spine2_Y" type="revolute">
+        <parent link="link_Spine2_P" />
+        <child link="link_Spine2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Neck_R" type="revolute">
+        <parent link="link_Spine2_Y" />
+        <child link="link_Neck_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.191400" />
+    </joint>
+    <joint name="joint_Neck_P" type="revolute">
+        <parent link="link_Neck_R" />
+        <child link="link_Neck_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Neck_Y" type="revolute">
+        <parent link="link_Neck_P" />
+        <child link="link_Neck_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Neck1_R" type="revolute">
+        <parent link="link_Neck_Y" />
+        <child link="link_Neck1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.042500" />
+    </joint>
+    <joint name="joint_Neck1_P" type="revolute">
+        <parent link="link_Neck1_R" />
+        <child link="link_Neck1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Neck1_Y" type="revolute">
+        <parent link="link_Neck1_P" />
+        <child link="link_Neck1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Head_R" type="revolute">
+        <parent link="link_Neck1_Y" />
+        <child link="link_Head_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.042500" />
+    </joint>
+    <joint name="joint_Head_P" type="revolute">
+        <parent link="link_Head_R" />
+        <child link="link_Head_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_Head_Y" type="revolute">
+        <parent link="link_Head_P" />
+        <child link="link_Head_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightShoulder_R" type="revolute">
+        <parent link="link_Spine2_Y" />
+        <child link="link_RightShoulder_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="0.029000 0.0 0.133400" />
+    </joint>
+    <joint name="joint_RightShoulder_P" type="revolute">
+        <parent link="link_RightShoulder_R" />
+        <child link="link_RightShoulder_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightShoulder_Y" type="revolute">
+        <parent link="link_RightShoulder_P" />
+        <child link="link_RightShoulder_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightArm_R" type="revolute">
+        <parent link="link_RightShoulder_Y" />
+        <child link="link_RightArm_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.161000 0.0 0.0" />
+    </joint>
+    <joint name="joint_RightArm_P" type="revolute">
+        <parent link="link_RightArm_R" />
+        <child link="link_RightArm_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightArm_Y" type="revolute">
+        <parent link="link_RightArm_P" />
+        <child link="link_RightArm_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightForeArm_R" type="revolute">
+        <parent link="link_RightArm_Y" />
+        <child link="link_RightForeArm_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.280000" />
+    </joint>
+    <joint name="joint_RightForeArm_P" type="revolute">
+        <parent link="link_RightForeArm_R" />
+        <child link="link_RightForeArm_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightForeArm_Y" type="revolute">
+        <parent link="link_RightForeArm_P" />
+        <child link="link_RightForeArm_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHand_R" type="revolute">
+        <parent link="link_RightForeArm_Y" />
+        <child link="link_RightHand_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.260000" />
+    </joint>
+    <joint name="joint_RightHand_P" type="revolute">
+        <parent link="link_RightHand_R" />
+        <child link="link_RightHand_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHand_Y" type="revolute">
+        <parent link="link_RightHand_P" />
+        <child link="link_RightHand_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb1_R" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightHandThumb1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="-0.002290 0.020847 -0.024347" />
+    </joint>
+    <joint name="joint_RightHandThumb1_P" type="revolute">
+        <parent link="link_RightHandThumb1_R" />
+        <child link="link_RightHandThumb1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb1_Y" type="revolute">
+        <parent link="link_RightHandThumb1_P" />
+        <child link="link_RightHandThumb1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb2_R" type="revolute">
+        <parent link="link_RightHandThumb1_Y" />
+        <child link="link_RightHandThumb2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.038720" />
+    </joint>
+    <joint name="joint_RightHandThumb2_P" type="revolute">
+        <parent link="link_RightHandThumb2_R" />
+        <child link="link_RightHandThumb2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb2_Y" type="revolute">
+        <parent link="link_RightHandThumb2_P" />
+        <child link="link_RightHandThumb2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb3_R" type="revolute">
+        <parent link="link_RightHandThumb2_Y" />
+        <child link="link_RightHandThumb3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.026900" />
+    </joint>
+    <joint name="joint_RightHandThumb3_P" type="revolute">
+        <parent link="link_RightHandThumb3_R" />
+        <child link="link_RightHandThumb3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandThumb3_Y" type="revolute">
+        <parent link="link_RightHandThumb3_P" />
+        <child link="link_RightHandThumb3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandIndex_R" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightInHandIndex_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.004337 0.011103 -0.038311" />
+    </joint>
+    <joint name="joint_RightInHandIndex_P" type="revolute">
+        <parent link="link_RightInHandIndex_R" />
+        <child link="link_RightInHandIndex_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandIndex_Y" type="revolute">
+        <parent link="link_RightInHandIndex_P" />
+        <child link="link_RightInHandIndex_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex1_R" type="revolute">
+        <parent link="link_RightInHandIndex_Y" />
+        <child link="link_RightHandIndex1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 -0.0 -0.055856" />
+    </joint>
+    <joint name="joint_RightHandIndex1_P" type="revolute">
+        <parent link="link_RightHandIndex1_R" />
+        <child link="link_RightHandIndex1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex1_Y" type="revolute">
+        <parent link="link_RightHandIndex1_P" />
+        <child link="link_RightHandIndex1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex2_R" type="revolute">
+        <parent link="link_RightHandIndex1_Y" />
+        <child link="link_RightHandIndex2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.038060" />
+    </joint>
+    <joint name="joint_RightHandIndex2_P" type="revolute">
+        <parent link="link_RightHandIndex2_R" />
+        <child link="link_RightHandIndex2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex2_Y" type="revolute">
+        <parent link="link_RightHandIndex2_P" />
+        <child link="link_RightHandIndex2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex3_R" type="revolute">
+        <parent link="link_RightHandIndex2_Y" />
+        <child link="link_RightHandIndex3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.021580" />
+    </joint>
+    <joint name="joint_RightHandIndex3_P" type="revolute">
+        <parent link="link_RightHandIndex3_R" />
+        <child link="link_RightHandIndex3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandIndex3_Y" type="revolute">
+        <parent link="link_RightHandIndex3_P" />
+        <child link="link_RightHandIndex3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandMiddle_R" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightInHandMiddle_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.001414 -0.001419 -0.036789" />
+    </joint>
+    <joint name="joint_RightInHandMiddle_P" type="revolute">
+        <parent link="link_RightInHandMiddle_R" />
+        <child link="link_RightInHandMiddle_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandMiddle_Y" type="revolute">
+        <parent link="link_RightInHandMiddle_P" />
+        <child link="link_RightInHandMiddle_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle1_R" type="revolute">
+        <parent link="link_RightInHandMiddle_Y" />
+        <child link="link_RightHandMiddle1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.054517" />
+    </joint>
+    <joint name="joint_RightHandMiddle1_P" type="revolute">
+        <parent link="link_RightHandMiddle1_R" />
+        <child link="link_RightHandMiddle1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle1_Y" type="revolute">
+        <parent link="link_RightHandMiddle1_P" />
+        <child link="link_RightHandMiddle1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle2_R" type="revolute">
+        <parent link="link_RightHandMiddle1_Y" />
+        <child link="link_RightHandMiddle2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.041530" />
+    </joint>
+    <joint name="joint_RightHandMiddle2_P" type="revolute">
+        <parent link="link_RightHandMiddle2_R" />
+        <child link="link_RightHandMiddle2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle2_Y" type="revolute">
+        <parent link="link_RightHandMiddle2_P" />
+        <child link="link_RightHandMiddle2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle3_R" type="revolute">
+        <parent link="link_RightHandMiddle2_Y" />
+        <child link="link_RightHandMiddle3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.026030" />
+    </joint>
+    <joint name="joint_RightHandMiddle3_P" type="revolute">
+        <parent link="link_RightHandMiddle3_R" />
+        <child link="link_RightHandMiddle3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandMiddle3_Y" type="revolute">
+        <parent link="link_RightHandMiddle3_P" />
+        <child link="link_RightHandMiddle3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandRing_R" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightInHandRing_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="-0.000343 -0.010250 -0.034368" />
+    </joint>
+    <joint name="joint_RightInHandRing_P" type="revolute">
+        <parent link="link_RightInHandRing_R" />
+        <child link="link_RightInHandRing_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandRing_Y" type="revolute">
+        <parent link="link_RightInHandRing_P" />
+        <child link="link_RightInHandRing_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing1_R" type="revolute">
+        <parent link="link_RightInHandRing_Y" />
+        <child link="link_RightHandRing1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.048991" />
+    </joint>
+    <joint name="joint_RightHandRing1_P" type="revolute">
+        <parent link="link_RightHandRing1_R" />
+        <child link="link_RightHandRing1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing1_Y" type="revolute">
+        <parent link="link_RightHandRing1_P" />
+        <child link="link_RightHandRing1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing2_R" type="revolute">
+        <parent link="link_RightHandRing1_Y" />
+        <child link="link_RightHandRing2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.036190" />
+    </joint>
+    <joint name="joint_RightHandRing2_P" type="revolute">
+        <parent link="link_RightHandRing2_R" />
+        <child link="link_RightHandRing2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing2_Y" type="revolute">
+        <parent link="link_RightHandRing2_P" />
+        <child link="link_RightHandRing2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing3_R" type="revolute">
+        <parent link="link_RightHandRing2_Y" />
+        <child link="link_RightHandRing3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.025110" />
+    </joint>
+    <joint name="joint_RightHandRing3_P" type="revolute">
+        <parent link="link_RightHandRing3_R" />
+        <child link="link_RightHandRing3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandRing3_Y" type="revolute">
+        <parent link="link_RightHandRing3_P" />
+        <child link="link_RightHandRing3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandPinky_R" type="revolute">
+        <parent link="link_RightHand_Y" />
+        <child link="link_RightInHandPinky_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="-0.003119 -0.020281 -0.029462" />
+    </joint>
+    <joint name="joint_RightInHandPinky_P" type="revolute">
+        <parent link="link_RightInHandPinky_R" />
+        <child link="link_RightInHandPinky_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightInHandPinky_Y" type="revolute">
+        <parent link="link_RightInHandPinky_P" />
+        <child link="link_RightInHandPinky_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky1_R" type="revolute">
+        <parent link="link_RightInHandPinky_Y" />
+        <child link="link_RightHandPinky1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.045026" />
+    </joint>
+    <joint name="joint_RightHandPinky1_P" type="revolute">
+        <parent link="link_RightHandPinky1_R" />
+        <child link="link_RightHandPinky1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky1_Y" type="revolute">
+        <parent link="link_RightHandPinky1_P" />
+        <child link="link_RightHandPinky1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky2_R" type="revolute">
+        <parent link="link_RightHandPinky1_Y" />
+        <child link="link_RightHandPinky2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.028980" />
+    </joint>
+    <joint name="joint_RightHandPinky2_P" type="revolute">
+        <parent link="link_RightHandPinky2_R" />
+        <child link="link_RightHandPinky2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky2_Y" type="revolute">
+        <parent link="link_RightHandPinky2_P" />
+        <child link="link_RightHandPinky2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky3_R" type="revolute">
+        <parent link="link_RightHandPinky2_Y" />
+        <child link="link_RightHandPinky3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.018310" />
+    </joint>
+    <joint name="joint_RightHandPinky3_P" type="revolute">
+        <parent link="link_RightHandPinky3_R" />
+        <child link="link_RightHandPinky3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_RightHandPinky3_Y" type="revolute">
+        <parent link="link_RightHandPinky3_P" />
+        <child link="link_RightHandPinky3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftShoulder_R" type="revolute">
+        <parent link="link_Spine2_Y" />
+        <child link="link_LeftShoulder_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0" xyz="-0.029000 0.0 0.133400" />
+    </joint>
+    <joint name="joint_LeftShoulder_P" type="revolute">
+        <parent link="link_LeftShoulder_R" />
+        <child link="link_LeftShoulder_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftShoulder_Y" type="revolute">
+        <parent link="link_LeftShoulder_P" />
+        <child link="link_LeftShoulder_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftArm_R" type="revolute">
+        <parent link="link_LeftShoulder_Y" />
+        <child link="link_LeftArm_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="-0.161000 0.0 0.0" />
+    </joint>
+    <joint name="joint_LeftArm_P" type="revolute">
+        <parent link="link_LeftArm_R" />
+        <child link="link_LeftArm_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftArm_Y" type="revolute">
+        <parent link="link_LeftArm_P" />
+        <child link="link_LeftArm_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftForeArm_R" type="revolute">
+        <parent link="link_LeftArm_Y" />
+        <child link="link_LeftForeArm_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.280000" />
+    </joint>
+    <joint name="joint_LeftForeArm_P" type="revolute">
+        <parent link="link_LeftForeArm_R" />
+        <child link="link_LeftForeArm_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftForeArm_Y" type="revolute">
+        <parent link="link_LeftForeArm_P" />
+        <child link="link_LeftForeArm_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHand_R" type="revolute">
+        <parent link="link_LeftForeArm_Y" />
+        <child link="link_LeftHand_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.260000" />
+    </joint>
+    <joint name="joint_LeftHand_P" type="revolute">
+        <parent link="link_LeftHand_R" />
+        <child link="link_LeftHand_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHand_Y" type="revolute">
+        <parent link="link_LeftHand_P" />
+        <child link="link_LeftHand_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb1_R" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftHandThumb1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.002290  0.020847 -0.024347" />
+    </joint>
+    <joint name="joint_LeftHandThumb1_P" type="revolute">
+        <parent link="link_LeftHandThumb1_R" />
+        <child link="link_LeftHandThumb1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb1_Y" type="revolute">
+        <parent link="link_LeftHandThumb1_P" />
+        <child link="link_LeftHandThumb1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb2_R" type="revolute">
+        <parent link="link_LeftHandThumb1_Y" />
+        <child link="link_LeftHandThumb2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.038720" />
+    </joint>
+    <joint name="joint_LeftHandThumb2_P" type="revolute">
+        <parent link="link_LeftHandThumb2_R" />
+        <child link="link_LeftHandThumb2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb2_Y" type="revolute">
+        <parent link="link_LeftHandThumb2_P" />
+        <child link="link_LeftHandThumb2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb3_R" type="revolute">
+        <parent link="link_LeftHandThumb2_Y" />
+        <child link="link_LeftHandThumb3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.026900" />
+    </joint>
+    <joint name="joint_LeftHandThumb3_P" type="revolute">
+        <parent link="link_LeftHandThumb3_R" />
+        <child link="link_LeftHandThumb3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandThumb3_Y" type="revolute">
+        <parent link="link_LeftHandThumb3_P" />
+        <child link="link_LeftHandThumb3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandIndex_R" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftInHandIndex_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.004337 0.011103 -0.038311" />
+    </joint>
+    <joint name="joint_LeftInHandIndex_P" type="revolute">
+        <parent link="link_LeftInHandIndex_R" />
+        <child link="link_LeftInHandIndex_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandIndex_Y" type="revolute">
+        <parent link="link_LeftInHandIndex_P" />
+        <child link="link_LeftInHandIndex_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex1_R" type="revolute">
+        <parent link="link_LeftInHandIndex_Y" />
+        <child link="link_LeftHandIndex1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 -0.0 -0.055856" />
+    </joint>
+    <joint name="joint_LeftHandIndex1_P" type="revolute">
+        <parent link="link_LeftHandIndex1_R" />
+        <child link="link_LeftHandIndex1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex1_Y" type="revolute">
+        <parent link="link_LeftHandIndex1_P" />
+        <child link="link_LeftHandIndex1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex2_R" type="revolute">
+        <parent link="link_LeftHandIndex1_Y" />
+        <child link="link_LeftHandIndex2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.038060" />
+    </joint>
+    <joint name="joint_LeftHandIndex2_P" type="revolute">
+        <parent link="link_LeftHandIndex2_R" />
+        <child link="link_LeftHandIndex2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex2_Y" type="revolute">
+        <parent link="link_LeftHandIndex2_P" />
+        <child link="link_LeftHandIndex2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex3_R" type="revolute">
+        <parent link="link_LeftHandIndex2_Y" />
+        <child link="link_LeftHandIndex3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.021580" />
+    </joint>
+    <joint name="joint_LeftHandIndex3_P" type="revolute">
+        <parent link="link_LeftHandIndex3_R" />
+        <child link="link_LeftHandIndex3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandIndex3_Y" type="revolute">
+        <parent link="link_LeftHandIndex3_P" />
+        <child link="link_LeftHandIndex3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandMiddle_R" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftInHandMiddle_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.001414 -0.001419 -0.036789" />
+    </joint>
+    <joint name="joint_LeftInHandMiddle_P" type="revolute">
+        <parent link="link_LeftInHandMiddle_R" />
+        <child link="link_LeftInHandMiddle_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandMiddle_Y" type="revolute">
+        <parent link="link_LeftInHandMiddle_P" />
+        <child link="link_LeftInHandMiddle_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle1_R" type="revolute">
+        <parent link="link_LeftInHandMiddle_Y" />
+        <child link="link_LeftHandMiddle1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.054517" />
+    </joint>
+    <joint name="joint_LeftHandMiddle1_P" type="revolute">
+        <parent link="link_LeftHandMiddle1_R" />
+        <child link="link_LeftHandMiddle1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle1_Y" type="revolute">
+        <parent link="link_LeftHandMiddle1_P" />
+        <child link="link_LeftHandMiddle1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle2_R" type="revolute">
+        <parent link="link_LeftHandMiddle1_Y" />
+        <child link="link_LeftHandMiddle2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.041530" />
+    </joint>
+    <joint name="joint_LeftHandMiddle2_P" type="revolute">
+        <parent link="link_LeftHandMiddle2_R" />
+        <child link="link_LeftHandMiddle2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle2_Y" type="revolute">
+        <parent link="link_LeftHandMiddle2_P" />
+        <child link="link_LeftHandMiddle2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle3_R" type="revolute">
+        <parent link="link_LeftHandMiddle2_Y" />
+        <child link="link_LeftHandMiddle3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.026030" />
+    </joint>
+    <joint name="joint_LeftHandMiddle3_P" type="revolute">
+        <parent link="link_LeftHandMiddle3_R" />
+        <child link="link_LeftHandMiddle3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandMiddle3_Y" type="revolute">
+        <parent link="link_LeftHandMiddle3_P" />
+        <child link="link_LeftHandMiddle3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandRing_R" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftInHandRing_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="-0.000343 -0.010250 -0.034368" />
+    </joint>
+    <joint name="joint_LeftInHandRing_P" type="revolute">
+        <parent link="link_LeftInHandRing_R" />
+        <child link="link_LeftInHandRing_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandRing_Y" type="revolute">
+        <parent link="link_LeftInHandRing_P" />
+        <child link="link_LeftInHandRing_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing1_R" type="revolute">
+        <parent link="link_LeftInHandRing_Y" />
+        <child link="link_LeftHandRing1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.048991" />
+    </joint>
+    <joint name="joint_LeftHandRing1_P" type="revolute">
+        <parent link="link_LeftHandRing1_R" />
+        <child link="link_LeftHandRing1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing1_Y" type="revolute">
+        <parent link="link_LeftHandRing1_P" />
+        <child link="link_LeftHandRing1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing2_R" type="revolute">
+        <parent link="link_LeftHandRing1_Y" />
+        <child link="link_LeftHandRing2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.036190" />
+    </joint>
+    <joint name="joint_LeftHandRing2_P" type="revolute">
+        <parent link="link_LeftHandRing2_R" />
+        <child link="link_LeftHandRing2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing2_Y" type="revolute">
+        <parent link="link_LeftHandRing2_P" />
+        <child link="link_LeftHandRing2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing3_R" type="revolute">
+        <parent link="link_LeftHandRing2_Y" />
+        <child link="link_LeftHandRing3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.025110" />
+    </joint>
+    <joint name="joint_LeftHandRing3_P" type="revolute">
+        <parent link="link_LeftHandRing3_R" />
+        <child link="link_LeftHandRing3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandRing3_Y" type="revolute">
+        <parent link="link_LeftHandRing3_P" />
+        <child link="link_LeftHandRing3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandPinky_R" type="revolute">
+        <parent link="link_LeftHand_Y" />
+        <child link="link_LeftInHandPinky_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="-0.003119 -0.020281 -0.029462" />
+    </joint>
+    <joint name="joint_LeftInHandPinky_P" type="revolute">
+        <parent link="link_LeftInHandPinky_R" />
+        <child link="link_LeftInHandPinky_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftInHandPinky_Y" type="revolute">
+        <parent link="link_LeftInHandPinky_P" />
+        <child link="link_LeftInHandPinky_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky1_R" type="revolute">
+        <parent link="link_LeftInHandPinky_Y" />
+        <child link="link_LeftHandPinky1_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.045026" />
+    </joint>
+    <joint name="joint_LeftHandPinky1_P" type="revolute">
+        <parent link="link_LeftHandPinky1_R" />
+        <child link="link_LeftHandPinky1_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky1_Y" type="revolute">
+        <parent link="link_LeftHandPinky1_P" />
+        <child link="link_LeftHandPinky1_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky2_R" type="revolute">
+        <parent link="link_LeftHandPinky1_Y" />
+        <child link="link_LeftHandPinky2_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0 -0.028980" />
+    </joint>
+    <joint name="joint_LeftHandPinky2_P" type="revolute">
+        <parent link="link_LeftHandPinky2_R" />
+        <child link="link_LeftHandPinky2_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky2_Y" type="revolute">
+        <parent link="link_LeftHandPinky2_P" />
+        <child link="link_LeftHandPinky2_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky3_R" type="revolute">
+        <parent link="link_LeftHandPinky2_Y" />
+        <child link="link_LeftHandPinky3_R" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin rpy="0.0 0.0 -0.0" xyz="0.0 -0.0 -0.018310" />
+    </joint>
+    <joint name="joint_LeftHandPinky3_P" type="revolute">
+        <parent link="link_LeftHandPinky3_R" />
+        <child link="link_LeftHandPinky3_P" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    <joint name="joint_LeftHandPinky3_Y" type="revolute">
+        <parent link="link_LeftHandPinky3_P" />
+        <child link="link_LeftHandPinky3_Y" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0000" lower="-3.1415926536" upper="3.1415926536"
+            velocity="3.0000" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+</robot>
